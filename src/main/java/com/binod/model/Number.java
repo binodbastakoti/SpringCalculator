@@ -6,7 +6,7 @@ public class Number  {
 	private String num3;
 	private String num4;
 	private String sum;
-	private String product;
+	private String products;
 
 	public String getNum1() {
 		return num1;
@@ -55,15 +55,15 @@ public class Number  {
 
 	public String getProduct() {
 		if (num3.equals("") || num4.equals(""))
-			product = "";
+			products = "";
 		else
-			product = String.valueOf(Integer.parseInt(num3) * Integer.parseInt(num4));
+			products = String.valueOf(Integer.parseInt(num3) * Integer.parseInt(num4));
 
-		return product;
+		return products;
 	}
 
 	public void setProduct(String product) {
-		this.product = product;
+		this.products = product;
 	}
 }
 
